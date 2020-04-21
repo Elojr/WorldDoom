@@ -1,0 +1,118 @@
+header {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, #245086, #0066ad);
+}
+
+section.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.logo a img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+section.logo h1 {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+  color: white;
+}
+
+section.logo button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px;
+  width: 85px;
+  height: 35px;
+  border: 0;
+  border-radius: 25px;
+  font-weight: 700;
+  background-color: white;
+  color: #245086;
+  cursor: pointer;
+}
+
+#iconeLogin {
+  color: #245086;
+  margin-left: 5px;
+}
+
+section.search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 0;
+}
+
+#iconeHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  width: 220px;
+  height: auto;
+}
+
+section.search form input {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 45px;
+  padding: 10px;
+  border: 0;
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 3em;
+}
+
+section.search form button {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+section.search form button img {
+  width: 15px;
+  height: auto;
+}
+
+section.menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section.menu a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+section.menu a:active {
+  border-bottom: 3px solid white;
+}
+
+section.menu a:hover {
+  border-bottom: 3px solid white;
+}
