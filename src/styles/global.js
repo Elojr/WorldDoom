@@ -16,4 +16,9 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  footer{
+    font: 700 17px Oswald, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
 `;

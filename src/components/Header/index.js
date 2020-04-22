@@ -36,7 +36,7 @@ function Header() {
         </section>
         <section className="menu">
           <nav>
-            <a href="/home">Início</a>
+            <a href="/">Início</a>
             <a href="/cursos">Cursos</a>
             <a href="/materias">Matérias</a>
             <a href="/professores">Professores</a>
