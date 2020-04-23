@@ -10,12 +10,12 @@ function Header() {
     <>
       <header>
         <section className="logo">
-          <a href="/inicio">
+          <a href="/">
             <img src={iconeLobo} alt="Projeto" />
           </a>
           <h1>Sua Plataforma Colaborativa de Provas</h1>
           <button>
-            LOGIN
+            <p>LOGIN </p>
             <FiLogIn class="iconeLogin" />
           </button>
         </section>
@@ -29,6 +29,7 @@ function Header() {
               id="searchHome"
               placeholder="Pesquise por Matéria ou Professor"
             />
+
             <button type="submit">
               <img src={iconeSearch} alt="" />
             </button>

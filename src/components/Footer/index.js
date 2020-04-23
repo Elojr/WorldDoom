@@ -24,17 +24,17 @@ function Footer() {
 
           <section className="icones">
             <button>
-              <FaFacebookF size={26} color="#245086" />
+              <FaFacebookF size={25} color="#245086" />
             </button>
             <button>
-              <FaInstagram size={26} color="#245086" />
+              <FaInstagram size={25} color="#245086" />
             </button>
             <img src={iconeLobo} alt="projeto" />
             <button>
-              <FaGlobe size={26} color="#245086" />
+              <FaGlobe size={25} color="#245086" />
             </button>
             <button>
-              <FaLinkedinIn size={26} color="#245086" />
+              <FaLinkedinIn size={25} color="#245086" />
             </button>
           </section>
         </section>

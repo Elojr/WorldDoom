@@ -21,7 +21,7 @@ section.top nav {
   flex-direction: column;
   margin-left: 100px;
   padding-top: 20px;
-
+  box-sizing: border-box;
   position: absolute;
   left: 0;
 }
@@ -80,4 +80,19 @@ section.bottom h1 {
   font-size: 17px;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  section.top nav {
+    top: 0;
+    font-size: 14px;
+  }
+
+  section.top section.icones button {
+    width: 3em;
+    height: 3em;
+  }
+  section.top section.icones img {
+    width: 20%;
+  }
 }

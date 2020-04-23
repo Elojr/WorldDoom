@@ -5,7 +5,28 @@ header {
   display: flexbox;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom right, #245086, #0066ad);
+  background-image: linear-gradient(180deg, #245086, #0066ad);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22em;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
 
 section.logo {
@@ -26,6 +47,12 @@ section.logo h1 {
   font-style: italic;
   margin-top: 20px;
   color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.18em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(60, end), blink-caret 0.75s step-end infinite;
 }
 
 section.logo button {
@@ -46,9 +73,9 @@ section.logo button {
   cursor: pointer;
 }
 
-#iconeLogin {
+.iconeLogin {
   color: #245086;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 section.search form {
@@ -78,7 +105,21 @@ section.search form input {
   opacity: 0.4;
   border-radius: 50px;
   text-align: center;
-  margin-left: 3em;
+  outline: none;
+}
+
+section.search form input:focus {
+  text-align: center;
+  color: white;
+}
+
+section.search form input {
+  background-color: black;
+}
+
+section.search form input:focus::placeholder {
+  text-align: start;
+  color: transparent;
 }
 
 section.search form button {
@@ -109,10 +150,53 @@ section.menu a {
   margin-bottom: 20px;
 }
 
-section.menu a:active {
+section.menu a:enabled {
   border-bottom: 3px solid white;
 }
 
 section.menu a:hover {
   border-bottom: 3px solid white;
+}
+
+@media only screen and (max-width: 900px) {
+  #iconeHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: auto;
+  }
+
+  section.logo button {
+    width: 75px;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  section.logo h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #iconeHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: auto;
+  }
+
+  section.logo h1 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #iconeHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: auto;
+  }
 }
