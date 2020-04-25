@@ -11,6 +11,10 @@ export default createGlobalStyle`
     outline: none;
     
   }
+  a{
+    text-decoration:none;
+    
+  }
 
   header{
     font: 700 17px Oswald, sans-serif;

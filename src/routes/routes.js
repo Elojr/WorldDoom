@@ -14,24 +14,23 @@ import Subjects from '../views/Subjects';
 import Teachers from '../views/Teachers';
 import Project from '../views/Project';
 
-
 export default function Routes() {
-    return(
-        <BrowserRouter>
-        <Switch>
-            <Route path="/" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/profile/edit" component={EditProfile} />
-            <Route path="/forgot_password" component={ForgotPassword} />
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/registrar" component={Register} />
+        <Route path="/profile/edit" component={EditProfile} />
+        <Route path="/forgot_password" component={ForgotPassword} />
 
-            <Route path="/tests/new" component={NewTest} />
+        <Route path="/tests/new" component={NewTest} />
 
-            <Route path="/home" component={Home} />
-            <Route path="/courses" component={Courses} />
-            <Route path="/subjects" component={Subjects} />
-            <Route path="/teachers" component={Teachers} />
-            <Route path="/project" component={Project} />
-        </Switch>
-        </BrowserRouter>
-    )
+        <Route path="/" exact component={Home} />
+        <Route path="/cursos" component={Courses} />
+        <Route path="/materias" component={Subjects} />
+        <Route path="/professores" component={Teachers} />
+        <Route path="/projeto" component={Project} />
+      </Switch>
+    </BrowserRouter>
+  );
 }

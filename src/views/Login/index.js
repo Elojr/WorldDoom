@@ -1,9 +1,6 @@
 import React from 'react';
-
 import './styles.css';
 
-export default function ForgotPassword() {
-    return(
-        <h1>Dominação Mundial</h1>
-    );
+export default function Login() {
+  return <h1>Login</h1>;
 }

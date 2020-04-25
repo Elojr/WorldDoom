@@ -16,19 +16,24 @@ section.top {
   padding: 20px;
 }
 
-section.top nav {
+section.top nav.top {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 2rem;
+  bottom: 5rem;
   padding-top: 20px;
   box-sizing: border-box;
   position: absolute;
   left: 0;
 }
 
-section.top nav a {
+section.top nav.top a {
   text-decoration: none;
   color: white;
+}
+
+section.top nav.top a:hover {
+  font-size: 20px;
 }
 
 section.top section.icones {
@@ -58,6 +63,9 @@ section.icones img {
   width: 140px;
   cursor: pointer;
 }
+section.icones img:hover {
+  width: 150px;
+}
 
 section.bottom {
   display: flex;
@@ -82,10 +90,13 @@ section.bottom h1 {
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 900px) {
-  section.top nav {
-    top: 0;
-    font-size: 14px;
+@media only screen and (max-width: 992px) {
+  section.top nav.top a {
+    font-size: 15px;
+  }
+
+  section.top nav.top a:hover {
+    font-size: 17px;
   }
 
   section.top section.icones button {
@@ -93,6 +104,12 @@ section.bottom h1 {
     height: 3em;
   }
   section.top section.icones img {
-    width: 20%;
+    width: 100px;
+  }
+
+  section.top section.icones img:hover {
+    width: 110px;
+    margin-top: -0.5rem;
+    margin-left: 0;
   }
 }

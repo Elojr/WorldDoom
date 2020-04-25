@@ -5,16 +5,34 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGlobe } from 'react-icons/fa';
-
-import iconeLobo from '../../assets/iconeLobo.png';
+import bookSombra from '../../assets/bookSombra.png';
+import iconeLoboSombra from '../../assets/iconeLoboSombra.png';
 import logoELO from '../../assets/logoELO.png';
 
-function Footer() {
+function FooterProjeto() {
   return (
     <>
       <footer>
+        <section className="topper">
+          <div className="text">
+            <h1>QUER SABER MAIS SOBRE NÓS?</h1>
+            <a
+              href="https://elojr.com.br/servicos-e-solucoes/solucoes-em-tecnologia/"
+              target="blank"
+            >
+              <button>
+                <img src={bookSombra} alt="" />
+                CLIQUE AQUI
+              </button>
+            </a>
+          </div>
+          <div className="img">
+            <img src={iconeLoboSombra} alt="EloJr" />
+          </div>
+        </section>
+
         <section className="top">
-          <nav className="top">
+          <nav className="topProjeto">
             <Link to="/">Início</Link>
             <Link to="/cursos">Cursos</Link>
             <Link to="/materias">Matérias</Link>
@@ -36,9 +54,6 @@ function Footer() {
                 <FaInstagram size={25} color="#245086" />
               </button>
             </a>
-            <Link to="/">
-              <img src={iconeLobo} alt="projeto" />
-            </Link>
             <a href="https://elojr.com.br/" target="blank">
               <button>
                 <FaGlobe size={25} color="#245086" className="iconeGlobo" />
@@ -64,4 +79,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default FooterProjeto;
