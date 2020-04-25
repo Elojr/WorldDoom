@@ -8,10 +8,20 @@ export default createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  
+    outline: none;
+    
+  }
+  a{
+    text-decoration:none;
+    
   }
 
   header{
+    font: 700 17px Oswald, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  footer{
     font: 700 17px Oswald, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
