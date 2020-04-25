@@ -19,9 +19,9 @@ export default function Routes() {
     return(
         <BrowserRouter>
         <Switch>
-            <Route path="/" component={Login} />
+            <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-            <Route path="/profile/edit" component={EditProfile} />
+            <Route path="/" component={EditProfile} />
             <Route path="/forgot_password" component={ForgotPassword} />
 
             <Route path="/tests/new" component={NewTest} />
