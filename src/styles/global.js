@@ -9,6 +9,8 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     outline: none;
+    font-family: Oswald, sans-serif;
+    
     
   }
   a{
@@ -17,8 +19,7 @@ export default createGlobalStyle`
   }
 
   header{
-    
-    font: 700 17px Oswald, sans-serif;
+    font:  700 17px Oswald, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 

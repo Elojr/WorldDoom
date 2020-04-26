@@ -10,7 +10,7 @@ import loboBranco from '../../assets/iconeLobo.png';
 export default function Login() {
   return (
     <div className="login-container">
-      <Link className="arrow" to="/home">
+      <Link className="arrow" to="/">
         <FiArrowLeft size={24} color="#FFF" />
         Voltar
       </Link>
