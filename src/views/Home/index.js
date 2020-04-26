@@ -8,6 +8,7 @@ export default function Home() {
     <>
       <HeaderHome />
       <h1>Home</h1>
+
       <Footer />
     </>
   );

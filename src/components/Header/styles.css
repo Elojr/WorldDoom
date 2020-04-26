@@ -19,12 +19,12 @@ section.logo a img {
   width: 120px;
   height: auto;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 section.logo a img:hover {
   width: 130px;
-  margin-bottom: 0;
+  margin-bottom: 0.25rem;
 }
 
 section.logo button {
@@ -79,14 +79,6 @@ section.menu a:hover {
 }
 
 @media only screen and (max-width: 900px) {
-  #iconeHeader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 170px;
-    height: auto;
-  }
-
   section.logo button {
     width: 75px;
     height: 30px;

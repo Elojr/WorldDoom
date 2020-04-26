@@ -17,6 +17,7 @@ export default createGlobalStyle`
   }
 
   header{
+    
     font: 700 17px Oswald, sans-serif;
     -webkit-font-smoothing: antialiased;
   }

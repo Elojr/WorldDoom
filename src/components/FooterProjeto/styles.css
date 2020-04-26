@@ -43,7 +43,7 @@ section.topper div.text button {
   color: #032a5f;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  width: 250px;
+  width: 15rem;
   height: 60px;
   background-color: white;
   border: 0;
@@ -52,7 +52,7 @@ section.topper div.text button {
 }
 
 section.topper div.text button:hover {
-  font-size: 23px;
+  font-size: 21px;
 }
 
 section.topper div.text button img {
@@ -164,13 +164,13 @@ section.bottom h1 {
   }
 
   section.topper div.text button {
-    width: 80%;
-    height: 50px;
+    width: 13rem;
+    font-weight: bold;
     font-size: 18px;
   }
 
   section.topper div.text button:hover {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   section.topper div.img img {
@@ -193,9 +193,10 @@ section.bottom h1 {
   }
 
   section.topper div.text button {
-    width: 70%;
+    width: 12rem;
     height: 50px;
     font-size: 15px;
+    font-weight: bold;
   }
 
   section.topper div.text button:hover {
@@ -210,12 +211,98 @@ section.bottom h1 {
     width: 160px;
   }
 
-  section.top nav {
+  section.top nav.topProjeto {
     margin-top: 4em;
   }
 
-  section.top nav a {
+  section.top nav.topProjeto a {
+    font-size: 19px;
+  }
+
+  section.top section.icones button {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.topper div.text h1 {
+    font-size: 22px;
+  }
+  section.topper div.text {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  section.topper div.text button {
+    width: 12rem;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  section.topper div.text button:hover {
+    font-size: 17px;
+  }
+
+  section.topper div.text button img {
+    width: 35px;
+  }
+
+  section.topper div.img img {
+    width: 150px;
+  }
+
+  section.top nav.topProjeto {
+    margin-top: 4em;
+  }
+
+  section.top nav.topProjeto a {
+    font-size: 18px;
+  }
+
+  section.top section.icones button {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  section.topper div.text h1 {
+    font-size: 22px;
+  }
+  section.topper div.text {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  section.topper div.text button {
+    width: 11rem;
+    height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  section.topper div.text button:hover {
     font-size: 16px;
+  }
+
+  section.topper div.text button img {
+    width: 30px;
+  }
+
+  section.topper div.img img {
+    width: 145px;
+  }
+
+  section.top nav.topProjeto {
+    margin-top: 4em;
+  }
+
+  section.top nav.topProjeto a {
+    font-size: 0px;
   }
 
   section.top section.icones button {

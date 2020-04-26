@@ -24,7 +24,9 @@ section.top nav.top {
   padding-top: 20px;
   box-sizing: border-box;
   position: absolute;
-  left: 0;
+
+  left: 3em;
+  bottom: 6em;
 }
 
 section.top nav.top a {
@@ -89,8 +91,14 @@ section.bottom h1 {
   margin-right: 10px;
   margin-left: 10px;
 }
+@media only screen and (max-width: 1200px) {
+}
 
 @media only screen and (max-width: 992px) {
+  section.top nav.top {
+    bottom: 5.5em;
+  }
+
   section.top nav.top a {
     font-size: 15px;
   }
@@ -111,5 +119,11 @@ section.bottom h1 {
     width: 110px;
     margin-top: -0.5rem;
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  section.top nav.top a {
+    font-size: 0px;
   }
 }
