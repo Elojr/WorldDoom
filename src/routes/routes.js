@@ -15,9 +15,8 @@ import Teachers from '../views/Teachers';
 import Project from '../views/Project';
 
 export default function Routes() {
-
     return(
-        <BrowserRouter>
+      <BrowserRouter>
         <Switch>
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
@@ -27,11 +26,11 @@ export default function Routes() {
             <Route path="/tests/new" component={NewTest} />
 
             <Route path="/home" exact component={Home} />
-            <Route path="/cursos" component={Courses} />
-            <Route path="/materias" component={Subjects} />
-            <Route path="/professores" component={Teachers} />
-            <Route path="/projeto" component={Project} />
-      </Switch>
-    </BrowserRouter>
+            <Route path="/courses" component={Courses} />
+            <Route path="/subjects" component={Subjects} />
+            <Route path="/teacher" component={Teachers} />
+            <Route path="/project" component={Project} />
+        </Switch>
+      </BrowserRouter>
   );
 }

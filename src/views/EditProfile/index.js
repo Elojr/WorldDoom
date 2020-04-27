@@ -22,7 +22,15 @@ export default function EditProfile () {
             <h3>Curso do Usuário</h3>
 
             <form>
-                <input placeholder="Escolha o seu curso" />
+                <label for="courses">Escolha o seu curso:</label>
+
+                <select id="courses">
+                    <option value="">Selecione...</option>
+                    <option value="engcomp">Engenharia de Computação</option>
+                    <option value="engelet">Engenharia Elétrica</option>
+                    <option value="engmec">Engenharia Mecânica</option>
+                </select>
+
                 <input placeholder="Nome de usuário" />
 
                     <div className="profile">
