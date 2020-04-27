@@ -55,6 +55,10 @@ section.top section.icones button {
   cursor: pointer;
 }
 
+section.top section.icones button:hover {
+  opacity: 0.8;
+}
+
 section.icones button img {
   width: 140px;
   height: 35px;

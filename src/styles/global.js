@@ -11,7 +11,7 @@ export default createGlobalStyle`
     outline: none;
     font-family: Oswald, sans-serif;
     
-    
+  
   }
   a{
     text-decoration:none;
