@@ -19,6 +19,7 @@ export default function Login() {
 
       <form>
         <input placeholder="Digite seu email" />
+
         <input type="password" placeholder="Digite sua senha" />
 
         <div className="forgot">

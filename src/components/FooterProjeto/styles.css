@@ -41,8 +41,8 @@ section.topper div.text button {
   text-shadow: -8px 5px 10px grey;
   box-shadow: -8px 5px 10px;
   color: #032a5f;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
   width: 15rem;
   height: 60px;
   background-color: white;
@@ -52,7 +52,8 @@ section.topper div.text button {
 }
 
 section.topper div.text button:hover {
-  font-size: 21px;
+  font-size: 22px;
+  opacity: 0.9;
 }
 
 section.topper div.text button img {
