@@ -112,15 +112,17 @@ section.search form input {
   border-radius: 50px;
   text-align: center;
   outline: none;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 section.search form input:focus {
   text-align: center;
   color: white;
 }
-
-section.search form input {
+section.search form input:enabled {
   background-color: black;
+  opacity: 0.4;
 }
 
 section.search form input:focus::placeholder {
@@ -172,7 +174,7 @@ section.menu_home a:hover {
   margin-bottom: 0.8rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
   #iconeHeader {
     position: absolute;
     top: 0;
@@ -205,12 +207,16 @@ section.menu_home a:hover {
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 716px) {
   #iconeHeader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80px;
-    height: auto;
+    width: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  section.menu_home a {
+    font-size: 16px;
+    margin-left: 1.6rem;
   }
 }
