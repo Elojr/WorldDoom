@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { FiMail, FiLock, FiArrowLeft } from 'react-icons/fi';
+import { FaEnvelope, FaLock, FaArrowLeft } from 'react-icons/fa';
 
 import './styles.css';
 
@@ -11,20 +11,24 @@ export default function Login() {
   return (
     <div className="login-container">
       <Link className="arrow" to="/">
-        <FiArrowLeft size={24} color="#FFF" />
+        <FaArrowLeft size={24} color="#FFF" />
         Voltar
       </Link>
 
       <img src={loboBranco} alt="Icon" />
 
       <form>
-        <input placeholder="Digite seu email" />
-
-        <input type="password" placeholder="Digite sua senha" />
-
+        <div className="email_input">
+          <FaEnvelope className="icon_email" />
+          <input placeholder="Digite seu email" />
+        </div>
+        <div className="password_input">
+          <FaLock className="icon_password" />
+          <input type="password" placeholder="Digite sua senha" />
+        </div>
         <div className="forgot">
           <Link className="back-link" to="/forgot_password">
-            Esqueci minha senha
+            <p>Esqueci minha senha</p>
           </Link>
         </div>
 

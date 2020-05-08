@@ -34,6 +34,38 @@
   margin-bottom: 50px;
 }
 
+.email_input {
+  display: flex;
+  margin-right: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.email_input .icon_email {
+  position: relative;
+  font-size: 35px;
+  color: #409ef8;
+  left: 75px;
+  bottom: 10px;
+}
+
+.password_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.password_input .icon_password {
+  position: relative;
+  font-size: 35px;
+  color: #409ef8;
+  left: 75px;
+  bottom: 10px;
+}
+
 .login-container form {
   display: flex;
   flex-direction: column;
@@ -42,15 +74,15 @@
 }
 
 .login-container form input {
-  width: 150%;
-  height: 50px;
+  width: 350px;
+  height: 60px;
   border: 2px solid #409ef8;
   border-radius: 8px;
   margin-bottom: 20px;
   text-align: center;
   background-color: #464646;
   color: #409ef8;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -63,7 +95,7 @@
 }
 
 .login-container form button {
-  width: 150%;
+  width: 350px;
   height: 55px;
   border: 0;
   border-radius: 8px;
@@ -76,10 +108,16 @@
   font-weight: bold;
   background: #409ef8;
   transition: filter 0.2s;
+  margin-right: 10px;
 }
 
 .login-container form button:hover {
   filter: brightness(90%);
+}
+
+.forgot {
+  align-self: start;
+  margin-left: 40px;
 }
 
 .login-container text {
@@ -99,10 +137,12 @@
 }
 
 .back-link {
+  display: flex;
   color: #409ef8;
   font-size: 18px;
   text-decoration: none;
   font-weight: 500;
+  align-self: flex-start;
   transition: opacity 0.2s;
 }
 
